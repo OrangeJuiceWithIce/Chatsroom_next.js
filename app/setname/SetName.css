@@ -1,0 +1,21 @@
+.setNameContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.setName{
+    border:2px solid black;
+    padding:0 30px 30px 30px;
+    border-radius:10px;
+}
+
+.setName h1{
+    font-size:24px;
+}
+
+.setName button{
+    margin-left:20px;
+}

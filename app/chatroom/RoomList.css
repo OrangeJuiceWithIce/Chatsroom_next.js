@@ -1,0 +1,105 @@
+.RoomListTitle{
+    display:float;
+    flex-direction: row;
+    align-items: center;
+    width:240px;
+    height:30px;
+    margin:10px;
+    border-bottom: 1px solid #afafaf;
+}
+
+/*添加房间按钮*/
+.plus{
+    fill:#afafaf;
+}
+
+.plus:hover{
+    fill:#5f5f5f;
+    border-radius: 43px;
+    background: #ffffff;
+    box-shadow:  15px 15px 15px #d4dbe0,
+                -15px -15px -15px #f8ffff;
+}
+
+.user{
+    fill:#afafaf;
+}
+
+.user:hover{
+    fill:#5f5f5f;
+    background: #ffffff;
+    box-shadow:  15px 15px 15px #d4dbe0,
+                -15px -15px -15px #f8ffff;
+}
+
+.RoomList{
+    width:240px;
+    height:600px;
+    margin:10px;
+    overflow: scroll;/*始终显示滚动条*/
+    overflow-x:hidden;/*隐藏水平滚动条*/
+    scrollbar-width:thin;/*滚动条宽度*/
+}
+
+.RoomContainer{
+    display:flex;
+    flex-direction:row;
+    width:210px;
+    height:60px;
+    margin:5px;
+    border-radius:5px;
+}
+
+.RoomContainer:hover{
+    background-color: rgb(154, 210, 249);
+}
+
+.RoomContainer.selected{
+    background-color: #f5f5f5;
+}
+
+.RoomInfo{
+    display:flex;
+    flex-direction:column;
+    width:150px;
+    height:60px;
+}
+
+.NameAndTime{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:25px;
+    margin:5px;
+}
+
+.NameAndTime h2{
+    width:80px;
+    white-space:nowrap;/*文本不换行*/
+    overflow:hidden;/*隐藏溢出文本*/
+    text-overflow:ellipsis;/*省略号*/
+}
+
+.RoomContent{
+    color:#afafaf;
+    width:140px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    height:15px;
+    margin:5px;
+}
+
+.userName{
+    display:inline-block;
+    position:relative;
+    bottom:5px;
+    left:10px;
+
+    width:150px;
+    font-size:14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
